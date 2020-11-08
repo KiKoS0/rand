@@ -25,7 +25,7 @@ serde1 = ["serde"] # enables serde for BlockRng wrapper
 
 [dependencies]
 serde = { version = "1", features = ["derive"], optional = true }
-getrandom = { version = "0.2", optional = true }
+getrandom = { git = 'https://github.com/rust-random/getrandom', rev="c29dd5f", features = ["js"] , optional=true}
 
 [package.metadata.docs.rs]
 # To build locally:
